@@ -9,4 +9,41 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  z-index: -2;
+}
+
+.foreground {
+  background-image: url(./assets/fg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.planeContainer {
+  animation: flyPlane 7s linear infinite;
+  position: relative;
+  top: 40px;
+  z-index: -1;
+  & img {
+    width: 35%;
+  }
+
+  & h1 {
+    position: relative;
+    top: 68px;
+    left: 155px;
+  }
+}
+
+@keyframes flyPlane {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
