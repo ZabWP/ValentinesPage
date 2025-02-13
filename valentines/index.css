@@ -105,8 +105,8 @@ body {
 }
 
 .ballons {
-  left: 400px;
-  bottom: 10px;
+  left: 600px;
+  bottom: 80px;
   position: absolute;
   z-index: 2;
   transform: scale(0.1);
@@ -114,18 +114,18 @@ body {
 
 .ballons2 {
   right: 440px;
-  bottom: 100px;
+  bottom: 600px;
   position: relative;
   z-index: 2;
-  transform: scale(0.1);
+  transform: scale(0.2);
 }
 
 .ballons3 {
   position: absolute;
-  right: -275px;
-  bottom: -255px;
+  right: 130px;
+  bottom: -200px;
   z-index: 2;
-  transform: scale(0.1);
+  transform: scale(0.08);
 }
 
 @keyframes jump {
