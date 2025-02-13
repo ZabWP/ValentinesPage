@@ -6,6 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  overflow: hidden;
 }
 
 .background {
@@ -88,4 +89,64 @@ body {
     transform: skew(-10deg, 0deg);
     transform: rotate(-20deg);
   }
+}
+
+.fireworksContainer {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+}
+
+.fireworksContainer2 {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+.ballons {
+  left: 400px;
+  bottom: 10px;
+  position: absolute;
+  z-index: 2;
+  transform: scale(0.1);
+}
+
+.ballons2 {
+  right: 440px;
+  bottom: 100px;
+  position: relative;
+  z-index: 2;
+  transform: scale(0.1);
+}
+
+.ballons3 {
+  position: absolute;
+  right: -275px;
+  bottom: -255px;
+  z-index: 2;
+  transform: scale(0.1);
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.panda {
+  position: absolute;
+  right: 100px;
+  bottom: 70px;
+  z-index: 1;
+  transform: scale(0.5);
+  animation: jump 1s infinite ease-in-out;
+}
+
+.pandaImg {
+  width: 100px;
 }
