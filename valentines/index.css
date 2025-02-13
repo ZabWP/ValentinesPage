@@ -32,15 +32,38 @@ body {
   animation: flyPlane 7s linear infinite;
   position: relative;
   top: 40px;
+  left: 30%;
   z-index: -1;
   & img {
     width: 35%;
   }
 
-  & h1 {
+  & .bannerTextContainer {
     position: relative;
     top: 68px;
-    left: 155px;
+    left: 140px;
+    display: flex;
+    width: 360px;
+    justify-content: space-evenly;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(248, 207, 214);
+    text-shadow: 1px 1px black;
+    & .w1 {
+      position: relative;
+      bottom: 4px;
+    }
+
+    & .w2 {
+      color: red;
+      position: relative;
+      top: 4px;
+    }
+
+    & .w3 {
+      position: relative;
+      bottom: -8px;
+    }
   }
 }
 
