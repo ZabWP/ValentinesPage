@@ -3,6 +3,12 @@ body {
 }
 
 .pageWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.background {
   background-image: url(./assets/bg.jpeg);
   background-position: center;
   background-size: cover;
@@ -45,5 +51,18 @@ body {
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+.pizzaBannerContainer {
+  z-index: 2;
+  position: relative;
+  left: 84.5%;
+  top: 4.5%;
+
+  & img {
+    width: 250px;
+    transform: skew(-10deg, 0deg);
+    transform: rotate(-20deg);
   }
 }
